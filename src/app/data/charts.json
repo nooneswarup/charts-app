@@ -1,0 +1,397 @@
+[
+    {
+        "id":1,
+        "name":"sum-dev-diesel",
+        "stacked":{
+            "xAxis":{
+                "type":"category",
+                "data":[2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022]
+            },
+            "yAxis":{
+                "type": "value",
+                "number":3,
+                "series":[
+                    {
+                        "name":"Corrective",
+                        "type":"bar",
+                        "stack":"",
+                        "data":[0,50,54,42,43,60,51,42,45,51,72]
+                    },
+                    {
+                        "name":"Periodic",
+                        "type":"bar",
+                        "stack":"Ad",
+                        "data":[0,11,38,49,50,36,32,51,50,43,28]
+                    },
+                    {
+                        "name":"Preventative",
+                        "type":"bar",
+                        "stack":"Ad",
+                        "data":[0,39,7,9,7,4,17,7,5,6,0]
+                    }
+                ]
+            }
+        },
+        "linebar":{
+            "xAxis":{
+                "type":"category",
+                "data":[2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022]
+            },
+            "yAxis":[
+                {
+                    "type":"value",
+                    "name":"Cost per mile",
+                    "max":2,
+                    "min":0,
+                    "interval":0.2,
+                    "axisLabel":{
+                        "formatter":"{value} $"
+                    }
+                },
+                {
+                    "type":"value",
+                    "name":"Cost per mile",
+                    "max":1,
+                    "min":0,
+                    "interval":0.1,
+                    "axisLabel":{
+                        "formatter":"{value} $"
+                    }
+                }
+            ],
+            "number":2,
+            "series":[
+                {
+                    "name":"Cost per mile",
+                    "type":"bar",
+                    "data":[0,0.15,0.32,0.37,0.23,0.44,0.46,0.57,0.63,0.53,0],
+                    "yAxisIndex": 0
+                },
+                {
+                    "name":"Cost per mile",
+                    "type":"line",
+                    "data":[0,0.15,0.32,0.37,0.23,0.44,0.46,0.57,0.63,0.53,0],
+                    "yAxisIndex": 1
+                }
+            ]
+        },
+        "boxedplot":{
+            "dataset":[
+                [],
+                [0.15, 0.09, 0.11],
+                [0.32, 0.52, 0.25],
+                [0.37, 0.94, 0.30],
+                [0.23, 0.25, 0.19],
+                [0.44, 0.34, 0.35],
+                [0.46, 0.70, 0.46],
+                [0.57, 0.98, 0.56],
+                [0.63, 1.10, 0.55],
+                [0.53, 0.59, 0.47],
+                []
+            ],
+            "xAxis":{
+                "type":"category"
+            },
+            "yAxis":{
+                "type":"value",
+                "name":"Cost per mile"
+            }
+        }
+    },
+    {
+        "id":2,
+        "name":"ng-delivery",
+        "stacked":{
+            "xAxis":{
+                "type":"category",
+                "data":[2013,2014,2015,2016,2017,2018,2019,2020,2021]
+            },
+            "yAxis":{
+                "type": "value",
+                "number":3,
+                "series":[
+                    {
+                        "name":"Corrective",
+                        "type":"bar",
+                        "stack":"",
+                        "data":[100,20,32,27,21,33,47,54,56]
+                    },
+                    {
+                        "name":"Periodic",
+                        "type":"bar",
+                        "stack":"Ad",
+                        "data":[0,59,39,49,66,52,41,30,26]
+                    },
+                    {
+                        "name":"Preventative",
+                        "type":"bar",
+                        "stack":"Ad",
+                        "data":[0,22,29,24,13,16,12,16,18]
+                    }
+                ]
+                
+            }
+        },
+        "linebar":{
+            "xAxis":{
+                "type":"category",
+                "data":[2013,2014,2015,2016,2017,2018,2019,2020,2021]
+            },
+            "yAxis":[
+                {
+                    "type":"value",
+                    "name":"Cost per mile",
+                    "max":2,
+                    "min":0,
+                    "interval":0.2,
+                    "axisLabel":{
+                        "formatter":"{value} $"
+                    }
+                },
+                {
+                    "type":"value",
+                    "name":"Cost per mile",
+                    "max":1,
+                    "min":0,
+                    "interval":0.1,
+                    "axisLabel":{
+                        "formatter":"{value} $"
+                    }
+                }
+            ],
+            "number":2,
+            "series":[
+                    {
+                        "name":"Cost per mile",
+                        "type":"bar",
+                        "data":[0.02,0.12,0.06,0.09,0.08,0.16,0.21,0.18,0.33],
+                        "yAxisIndex": 0
+                    },
+                    {
+                        "name":"Cost per mile",
+                        "type":"line",
+                        "data":[0.02,0.12,0.06,0.09,0.08,0.16,0.21,0.18,0.33],
+                        "yAxisIndex": 1
+                    }
+                ]
+        },
+        "boxedplot":{
+            "dataset":[
+                [null,null,0.02],
+                [null,null,0.12],
+                [0.06,0.16,0.06],
+                [0.09,0.15,0.09],
+                [0.05,0.49,0.08],
+                [0.12,0.72,0.16],
+                [0.18,0.94,0.21],
+                [0.12,0.18,0.18],
+                [0.28,0.64,0.33]
+            ],
+            "xAxis":{
+                "type":"category"
+            },
+            "yAxis":{
+                "type":"value",
+                "name":"Cost per mile"
+            }
+        }
+    },
+    {
+        "id":3,
+        "name":"diesel-goodsmovemen",
+        "stacked":{
+            "xAxis":{
+                "type":"category",
+                "data":[2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022]
+            },
+            "yAxis":{
+                "type": "value",
+                "number":3,
+                "series":[
+                    {
+                        "name":"Corrective",
+                        "type":"bar",
+                        "stack":"",
+                        "data":[74,5,90,86,60,76,63,79,95,50,71]
+                    },
+                    {
+                        "name":"Periodic",
+                        "type":"bar",
+                        "stack":"Ad",
+                        "data":[21,95,10,11,19,4,24,6,3,0,29]
+                    },
+                    {
+                        "name":"Preventative",
+                        "type":"bar",
+                        "stack":"Ad",
+                        "data":[4,0,0,3,21,19,13,15,2,50,0]
+                    }
+                ]
+            }
+        },
+        "linebar":{
+            "xAxis":{
+                "type":"category",
+                "data":[2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022]
+            },
+            "yAxis":[
+                {
+                    "type":"value",
+                    "name":"Cost per mile",
+                    "max":5.6,
+                    "min":0,
+                    "interval":0.8,
+                    "axisLabel":{
+                        "formatter":"{value} $"
+                    }
+                },
+                {
+                    "type":"value",
+                    "name":"Cost per mile",
+                    "max":2.8,
+                    "min":0,
+                    "interval":0.4,
+                    "axisLabel":{
+                        "formatter":"{value} $"
+                    }
+                }
+            ],
+            "number":2,
+            "series":[
+                {
+                    "name":"Cost per mile",
+                    "type":"bar",
+                    "data":[0.05,0.02,0.04,1.62,0.18,0.19,0.28,0.13,0.53,2.55,0],
+                    "yAxisIndex": 0
+                },
+                {
+                    "name":"Cost per mile",
+                    "type":"line",
+                    "data":[0.05,0.02,0.04,1.62,0.18,0.19,0.28,0.13,0.53,2.55,0],
+                    "yAxisIndex": 1
+                }
+            ]
+        },
+        "boxedplot":{
+            "dataset":[
+                [null,null], 
+                [null,null],
+                [null,null],
+                [null,null],
+                [0.07,0.11],
+                [0.19,0.38],
+                [0.27,0.65],
+                [0.11,0.5],
+                [0.5,0.68],
+                [null,null],
+                [null,null]
+            ],
+            "xAxis":{
+                "type":"category"
+            },
+            "yAxis":{
+                "type":"value",
+                "name":"Cost per mile"
+            }
+        }
+    },
+    {
+        "id":4,
+        "name":"diesel-schoolbus",
+        "stacked":{
+            "xAxis":{
+                "type":"category",
+                "data":[2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022]
+            },
+            "yAxis":{
+                "type": "value",
+                "number":3,
+                "series":[
+                    {
+                        "name":"Corrective",
+                        "type":"bar",
+                        "stack":"",
+                        "data":[28,34,49,38,41,59,52,60,59,68,60]
+                    },
+                    {
+                        "name":"Periodic",
+                        "type":"bar",
+                        "stack":"Ad",
+                        "data":[63,49,43,55,50,38,38,38,38,26,34]
+                    },
+                    {
+                        "name":"Preventative",
+                        "type":"bar",
+                        "stack":"Ad",
+                        "data":[8,16,8,6,9,10,10,2,3,6,6]
+                    }
+                ]
+            }
+        },
+        "linebar":{
+            "xAxis":{
+                "type":"category",
+                "data":[2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022]
+            },
+            "yAxis":[
+                {
+                    "type":"value",
+                    "name":"Cost per mile",
+                    "max":4,
+                    "min":0,
+                    "interval":0.4,
+                    "axisLabel":{
+                        "formatter":"{value} $"
+                    }
+                },
+                {
+                    "type":"value",
+                    "name":"Cost per mile",
+                    "max":2,
+                    "min":0,
+                    "interval":0.2,
+                    "axisLabel":{
+                        "formatter":"{value} $"
+                    }
+                }
+            ],
+            "number":2,
+            "series":[
+                {
+                    "name":"Cost per mile",
+                    "type":"bar",
+                    "data":[0.13,0.21,0.30,0.26,0.32,0.64,0.40,0.84,0.61,1.24,0.96],
+                    "yAxisIndex": 0
+                },
+                {
+                    "name":"Cost per mile",
+                    "type":"line",
+                    "data":[0.13,0.21,0.30,0.26,0.32,0.64,0.40,0.84,0.61,1.24,0.96],
+                    "yAxisIndex": 1
+                }
+            ]
+        },
+        "boxedplot":{
+            "dataset":[
+                [0.10 , 0.25 , 0.13],
+                [-0.20, 0.30 , 0.21],
+                [0.24 , 0.12 , 0.30],
+                [0.21 , 0.49 , 0.26],
+                [-0.30, 1.72 , 0.32],
+                [0.58 , 2.38 , 0.64],
+                [-0.36, 1.44 , 0.40],
+                [-0.79, 2.85 , 0.84],
+                [-0.61, 2.46 , 0.61],
+                [-1.22, 19.93, 1.24],
+                [-0.94, 1.32 , 0.96]
+            ],
+            "xAxis":{
+                "type":"category"
+            },
+            "yAxis":{
+                "type":"value",
+                "name":"Cost per mile"
+            }
+        }
+    }
+]

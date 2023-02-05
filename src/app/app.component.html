@@ -1,0 +1,32 @@
+<div class="content" role="main">
+  <div class="row flex-nowrap">
+    <div class="col-sm">
+      <mat-form-field appearance="outline" >
+        <mat-label>Chart 1</mat-label>
+        <mat-select [(value)]="selectedChart1" name="chart1">
+          <mat-option *ngFor="let chart of charts" [value]="chart.id">
+            {{chart.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <app-stacked-chart [chart]="selectedChart1"></app-stacked-chart>
+      <app-linebar-chart [chart]="selectedChart1"></app-linebar-chart>
+      <app-boxedplot-chart [chart]="selectedChart1"></app-boxedplot-chart>
+    </div>
+
+    <div class="col-sm">
+      <mat-form-field appearance="outline">
+        <mat-label>Chart 2</mat-label>
+        <mat-select [(value)]="selectedChart2" name="chart2">
+          <mat-option *ngFor="let chart of charts" [value]="chart.id">
+            {{chart.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <app-stacked-chart [chart]="selectedChart2"></app-stacked-chart> 
+      <app-linebar-chart [chart]="selectedChart2"></app-linebar-chart>
+      <app-boxedplot-chart [chart]="selectedChart2"></app-boxedplot-chart>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
