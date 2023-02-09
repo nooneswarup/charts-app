@@ -1,5 +1,4 @@
 import { Component, Input, OnChanges, SimpleChanges, ChangeDetectionStrategy } from '@angular/core';
-import { DataComponent } from 'src/app/data/data.component';
 
 @Component({
   selector: 'app-stacked-chart',
@@ -9,14 +8,14 @@ import { DataComponent } from 'src/app/data/data.component';
 })
 export class StackedChartComponent implements OnChanges{
   options: any;
-  @Input() chart : number=0;
+  @Input() chart : any;
 
-  constructor(private dataComponent: DataComponent) { }
-  charts=this.dataComponent.chartsData;
+  constructor() { }
 
   ngOnChanges(changes: SimpleChanges) {
-    var xAxisData = this.charts[this.chart-1].stacked.xAxis;
-    var yAxisData = this.charts[this.chart-1].stacked.yAxis;
+    var xAxisData = this.chart.xAxis;
+    var yAxisData = this.chart.yAxis;
+    var seriesData = this.chart.series;
     this.options = {
       tooltip: {
         trigger: 'axis',
@@ -42,7 +41,7 @@ export class StackedChartComponent implements OnChanges{
           type: yAxisData.type
         }
       ],
-      series: yAxisData.series
+      series: seriesData
     }
   }
 

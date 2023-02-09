@@ -12,14 +12,13 @@ export class AppComponent implements OnInit{
   constructor (private dataComponent: DataComponent)
   {}
 
-  chart=0;
   charts=this.dataComponent.chartsData;
-  selectedChart1 = 0;
-  selectedChart2 = 0;
+  selectedChart1:any;
+  selectedChart2:any;
 
     ngOnInit() {
-      this.selectedChart1 = 1;
-      this.selectedChart2 = 2;
+      this.selectedChart1 = this.charts[0];
+      this.selectedChart2 = this.charts[1];
   }
   
 }
