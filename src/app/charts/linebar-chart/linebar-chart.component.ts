@@ -1,5 +1,4 @@
 import { Component, Input, OnChanges, SimpleChanges, ChangeDetectionStrategy } from '@angular/core';
-import { DataComponent } from 'src/app/data/data.component';
 
 @Component({
   selector: 'app-linebar-chart',
@@ -9,19 +8,18 @@ import { DataComponent } from 'src/app/data/data.component';
 })
 export class LinebarChartComponent implements OnChanges{
   options: any;
-  @Input() chart : number=0;
+  @Input() chart : any;
 
-  constructor(private dataComponent: DataComponent) { }
-  charts=this.dataComponent.chartsData;
+  constructor() { }
 
   ngOnChanges(changes: SimpleChanges) {
-    var xAxisData = this.charts[this.chart-1].linebar.xAxis;
-    var yAxisData = this.charts[this.chart-1].linebar.yAxis;
-    var seriesData = this.charts[this.chart-1].linebar.series;
+    var xAxisData = this.chart.xAxis;
+    var yAxisData = this.chart.yAxis;
+    var seriesData = this.chart.series;
     var legendData:Array<string>=[];
     
 
-     for (let index = 0; index < this.charts[this.chart-1].linebar.number; index++) {
+     for (let index = 0; index < seriesData.length; index++) {
        legendData.push(seriesData[index].name);
      }
      

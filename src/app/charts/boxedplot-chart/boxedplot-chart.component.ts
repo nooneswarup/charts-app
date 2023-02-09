@@ -1,5 +1,4 @@
 import { Component, Input, OnChanges, SimpleChanges, ChangeDetectionStrategy } from '@angular/core';
-import { DataComponent } from 'src/app/data/data.component';
 
 @Component({
   selector: 'app-boxedplot-chart',
@@ -9,15 +8,14 @@ import { DataComponent } from 'src/app/data/data.component';
 })
 export class BoxedplotChartComponent implements OnChanges{
   options: any;
-  @Input() chart : number=0;
+  @Input() chart : any;
 
-  constructor(private dataComponent: DataComponent) { }
-  charts=this.dataComponent.chartsData;
+  constructor() { }
 
   ngOnChanges(changes: SimpleChanges) {
-    var xAxisData = this.charts[this.chart-1].boxedplot.xAxis;
-    var yAxisData = this.charts[this.chart-1].boxedplot.yAxis;
-    var datasetData = this.charts[this.chart-1].boxedplot.dataset;
+    var xAxisData = this.chart.xAxis;
+    var yAxisData = this.chart.yAxis;
+    var datasetData = this.chart.dataset;
     this.options = {
       title: [
         {
